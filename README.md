@@ -1,51 +1,47 @@
-# react-template
-A template for building a React app with SASS.
+# Project: Food Blog
+## Description 
+A food blog made in react.
 
-<details>
-<summary>Included dev/dependencies:</summary>
+## Installation and Usage
 
-    devDependencies: 
-        "@babel/core": "^7.13.15",
-        "@babel/plugin-proposal-class-properties": "^7.13.0",
-        "@babel/plugin-transform-runtime": "^7.13.15",
-        "@babel/preset-env": "^7.13.15",
-        "@babel/preset-react": "^7.13.13",
-        "babel-loader": "^8.2.2",
-        "css-loader": "^5.2.1",
-        "file-loader": "^6.2.0",
-        "html-webpack-plugin": "^5.3.1",
-        "sass": "^1.34.0",
-        "sass-loader": "^11.1.1",
-        "style-loader": "^2.0.0",
-        "webpack": "^5.31.2",
-        "webpack-cli": "^4.6.0",
-        "webpack-dev-server": "^3.11.2"
-    
-    dependencies:
-        "bootstrap": "^5.0.1",
-        "react": "^17.0.2",
-        "react-bootstrap": "^1.6.0",
-        "react-dom": "^17.0.2",
-        "react-router-dom": "^5.2.0"
+Clone or download this repo:
 
-</details>
+To start client:   
+    `npm install`   
+    `npm run dev`  
+The client will open on port 8080   
 
-## For development:  
-`npm install`  
-`npm run dev`  
+## Technologies  
+- HTML, CSS, JavaScript  
 
-## For production:  
-`npm run build`   
-`touch netlify.toml`  
+### Dependencies: 
 
-    # in netlify.toml
-      
-    [build]  
-        command = "npm run build" # how to trigger a build  
-        publish = "/build" # what folder to publish    
-    [[redirects]]   
-        from = "/*" # redirect any path  
-        to = "/index.html" # to this html page   
-        status = 200 # with this status   
-       
- Deploy as usual on Netlify!
+   - Client: axios, react, router-dom, react-router-dom, react-icons
+   
+### DevDependencies:
+   
+   - Client: babel 
+
+## Process 
+1. Create a front end in react with a previously made [react template](https://github.com/natbibi/react-template)
+2. Add necessary pages, routes and add to navlink 
+
+### TODOS
+- [ ] add correct email address and activate formsubmit.io 
+
+## Bugs
+- [x] no bugs here!
+
+## Changelog
+
+### React-Client
+1. Set up pages and components from my previously set up react template
+2. Create a form component and render on Home page 
+3. Add text, details and social icons
+4. Fetch posts from my api 
+
+## Wins & Challenges
+
+### Wins
+
+### Challenges
