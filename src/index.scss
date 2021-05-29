@@ -1,0 +1,21 @@
+// Imports / Variables
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&display=swap');
+// font-family: 'Barlow Semi Condensed', sans-serif;
+
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
+@import './variables';
+
+// Pages
+@import './pages/Home/home';
+
+// Components
+// @import './components/ComponentName/componentname';
+
+// Layout
+@import './layout/layout';
+
+
+// Global CSS
+body {
+    font-family: $console-font;
+}
