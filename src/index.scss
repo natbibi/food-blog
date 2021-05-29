@@ -21,6 +21,13 @@
 body {
     font-family: $main-font;
     background-color: black;
+    color: $text-offwhite;
+}
+
+header {
+    margin-top: 2rem;
+    padding: 2rem;
+    width: 100%;
 }
 
 h1 {
