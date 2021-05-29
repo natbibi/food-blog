@@ -1,14 +1,14 @@
 import React from 'react';
 
-const About = () => {
+const EatOut = () => {
  
     return (
         <>
             <header>
-                <h1>About</h1>
+                <h1>My Eating Adventures!</h1>
             </header>
         </>
     )
 }
 
-export default About;
+export default EatOut;
