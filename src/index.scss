@@ -8,6 +8,7 @@
 
 // Pages
 @import './pages/Home/home';
+@import './pages/Contact/contact';
 
 // Components
 // @import './components/ComponentName/componentname';
@@ -22,6 +23,6 @@ body {
     background-color: black;
 }
 
-header {
-   display: none;
+h1 {
+   visibility: hidden;
 }

@@ -1,0 +1,23 @@
+main#contact {
+    display: flex;
+    justify-content: center;
+
+    form {
+        display: flex;
+        flex-direction: column;
+        color: white;
+        width: 50%;
+        padding: 3rem;
+
+        input, textarea {
+            margin-bottom: 1rem;
+        }
+        
+        p { 
+            margin-top: 3rem;
+            margin-bottom: 3rem;
+        }
+    }
+
+
+}
