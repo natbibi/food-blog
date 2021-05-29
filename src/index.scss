@@ -1,6 +1,7 @@
 // Imports / Variables
-@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;500&display=swap');
-// font-family: 'Barlow Semi Condensed', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Limelight&display=swap');
+// font-family: 'Lato', sans-serif;
+// font-family: 'Limelight', cursive;
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 @import './variables';
@@ -17,5 +18,10 @@
 
 // Global CSS
 body {
-    font-family: $console-font;
+    font-family: $main-font;
+    background-color: black;
+}
+
+header {
+   display: none;
 }
