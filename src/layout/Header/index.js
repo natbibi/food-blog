@@ -1,13 +1,10 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
+import { Burger, RightNav } from '../'
 
 const Header = () => {
     return (
         <nav role="navigation">
-            <NavLink exact to="/" activeClassName="current">Home</NavLink>
-            <NavLink to="/eatout" activeClassName="current">Eat Out</NavLink>
-            <NavLink to="/eatin" activeClassName="current">Eat In</NavLink>
-            <NavLink to="/contact" activeClassName="current">Contact</NavLink>
+            <Burger />
         </nav>
     );
 }
