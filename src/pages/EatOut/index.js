@@ -1,15 +1,17 @@
 import React, { useEffect, useState } from 'react';
+import { Route, Switch, useHistory } from 'react-router-dom';
 import axios from 'axios';
-import { EatOutPost } from '../../components'
+import { EatOutPost, EatOutBlog } from '../../components'
 
 const EatOut = () => {
     const [post, setPost] = useState([])
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
+
+    const history = useHistory();
 
     useEffect(() => {
         const fetchPosts = async () => {
-            setLoading(true)
             try {
                 const { data } = await axios.get("https://nat-api.herokuapp.com/eatout/")
                 setPost(data)
@@ -22,21 +24,47 @@ const EatOut = () => {
         fetchPosts()
     }, []);
 
+    const handleSelect = (id) => {
+        history.push(`eatout/${(id)}`)
+    }
+
     const renderPosts = post.map(d =>
-        <EatOutPost postData={d} key={d.id} />
+        <EatOutPost postData={d} key={d.id} handleSelect={handleSelect} />
     );
 
     return (
         <>
-            <header>
-                <h1>My Eating Adventures!</h1>
-                <h5>Cats are cute groom forever, stretch tongue and leave it slightly out, blep but reward the chosen human with a slow blink, and use lap as chair there's a forty year old lady there let us feast intently stare at the same spot. Chase laser small kitty warm kitty little balls of fur, poop in a handbag look delicious and drink the soapy mopping up water then puke giant foamy fur-balls</h5>
-            </header>
-            <main>
-                {loading ? <p className="main-container">loading... please wait or refresh </p> :
-                    <>{renderPosts} </>}
-                {error && <p className="main-container">sorry, please try again!</p>}
-            </main>
+            <section>
+                <header>
+                    <h1>My Eating Adventures!</h1>
+                </header>
+                {
+                    <Switch>
+                        <Route exact path={"/eatout"} render={() => (
+                            <>
+
+                                <main id="eatout">
+                                    {loading ? <p className="main-container">loading... please wait or refresh </p> :
+                                        <>{renderPosts} </>}
+                                    {error && <p className="main-container">sorry, please try again!</p>}
+                                </main>
+                            </>)} />
+
+                        <Route path={"/eatout/:id"} render={({ match }) => (
+                            <>
+                                {loading ? <p style={{ textAlign: "center", marginTop: "3rem" }}>loading... please wait or refresh </p> :
+                                    <div className="container">
+                                        <EatOutBlog postData={post[match.params.id - 1]} handleSelect={() => { }} />
+                                    </div>
+                                }
+                            </>
+                        )} />
+
+
+
+                    </Switch>
+                }
+            </section>
         </>
     )
 }
