@@ -1,13 +1,15 @@
 import React from 'react'
 
-const EatOutPost = ({ postData }) => {
-    console.log(postData)
+const EatOutPost = ({ postData, handleSelect }) => {
     return (
         <div className="post-container">
-            <h5>"{postData.title}"</h5>
-            <p>{postData.restaurant_name}, {postData.location}</p>
-            <img style={{width: "300px", height: "auto"}}src={postData.image}/>        
-            <p>{postData.value}⭐️</p>    
+            <h5 style={{ fontSize: "18px", width: "70%" }}><em>"{postData.title}"</em></h5>
+            <img style={{ width: "300px", height: "auto" }} src={postData.image} onClick={() => handleSelect(postData.id)} />
+            <p>{postData.restaurant_name}</p>
+            <p>{postData.location}</p>
+            <div className="ratings">
+                <p>{postData.value + postData.taste + postData.atmosphere + postData.service} ⭐️</p>
+            </div>
         </div>
     )
 }
