@@ -4,7 +4,7 @@ const EatOutPost = ({ postData, handleSelect }) => {
     return (
         <div className="post-container">
             <h5 style={{ fontSize: "18px", width: "70%" }}><em>"{postData.title}"</em></h5>
-            <img style={{ width: "300px", height: "auto" }} src={postData.image} onClick={() => handleSelect(postData.id)} />
+            <img src={postData.image} onClick={() => handleSelect(postData.id)} />
             <p>{postData.restaurant_name}</p>
             <p>{postData.location}</p>
             <div className="ratings">

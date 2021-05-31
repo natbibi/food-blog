@@ -34,24 +34,28 @@ const EatOut = () => {
 
     return (
         <>
-            <section>
-                <header>
-                    <h1>My Eating Adventures!</h1>
-                </header>
+            <section style={{paddingBottom: "3rem"}}>
+
                 {
                     <Switch>
                         <Route exact path={"/eatout"} render={() => (
                             <>
-
+                                <header>
+                                    <h1>My Eating Adventures!</h1>
+                                    <h5>⏰⏰⏰ WOOOO, lockdown is over, time to visit some restaurants that we been wanting to visit for sometimes. Food! FOod! FOOD! 🦀🍣🥩</h5>
+                                </header>
                                 <main id="eatout">
-                                    {loading ? <p className="main-container">loading... please wait or refresh </p> :
+                                    {loading ? <p style={{ textAlign: "center" }}>loading... please wait or refresh </p> :
                                         <>{renderPosts} </>}
-                                    {error && <p className="main-container">sorry, please try again!</p>}
+                                    {error && <p style={{ textAlign: "center" }}>sorry, please try again!</p>}
                                 </main>
                             </>)} />
 
                         <Route path={"/eatout/:id"} render={({ match }) => (
                             <>
+                                <header>
+                                    <h1>My Eating Adventures!</h1>
+                                </header>
                                 {loading ? <p style={{ textAlign: "center", marginTop: "3rem" }}>loading... please wait or refresh </p> :
                                     <div className="container">
                                         <EatOutBlog postData={post[match.params.id - 1]} handleSelect={() => { }} />
