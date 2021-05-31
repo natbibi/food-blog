@@ -34,9 +34,9 @@ const EatIn = () => {
                 <h5>👨‍🍳👨‍🍳👨‍🍳 I like cooking, and doing the groceries, would actually love to be a house husband 😂 .Not the best cook, but pretty sure I’ll get better overtime!</h5>
             </header>
             <main id="eatin">
-                {loading ? <p className="main-container">loading... please wait or refresh </p> :
+                {loading ? <p style={{textAlign: "center"}}>loading... please wait or refresh </p> :
                     <>{renderPosts} </>}
-                {error && <p className="main-container">sorry, please try again!</p>}
+                {error && <p style={{textAlign: "center"}}>sorry, please try again!</p>}
             </main>
         </>
     )
