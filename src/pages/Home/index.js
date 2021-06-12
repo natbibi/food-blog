@@ -1,5 +1,5 @@
 import React from 'react';
-import stemoji from '../../../public/Images/stemoji.png'
+import stemoji from '../../../public/images/stemoji.png'
 
 const Home = () => {
 
