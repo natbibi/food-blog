@@ -1,9 +1,10 @@
 import React from 'react';
-import { Burger, RightNav } from '../'
+import { Burger } from '../'
 
 const Header = () => {
     return (
         <nav role="navigation">
+            <h1>Ste's Food</h1>
             <Burger />
         </nav>
     );
