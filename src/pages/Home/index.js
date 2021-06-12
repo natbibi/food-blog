@@ -5,7 +5,7 @@ const Home = () => {
 
     return (
         <>
-            <header style={{padding: "1rem"}}>
+            <header style={{ padding: "1rem" }}>
                 <h1>Hello World!</h1>
             </header>
             <main id="homepage">
