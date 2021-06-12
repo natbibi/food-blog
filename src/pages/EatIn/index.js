@@ -31,7 +31,8 @@ const EatIn = () => {
         <>
             <header>
                 <h1>My Personal Cooking</h1>
-                <h5>👨‍🍳👨‍🍳👨‍🍳 I like cooking, and doing the groceries, would actually love to be a house husband 😂 .Not the best cook, but pretty sure I’ll get better overtime!</h5>
+                <h5>👨‍🍳👨‍🍳👨‍🍳 I like cooking, and doing the groceries, would actually love to be a house husband 😂 </h5>
+                <h5>Not the best cook, but pretty sure I’ll get better overtime!</h5>
             </header>
             <main id="eatin">
                 {loading ? <p style={{textAlign: "center"}}>loading... please wait or refresh </p> :

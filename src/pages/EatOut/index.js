@@ -34,7 +34,7 @@ const EatOut = () => {
 
     return (
         <>
-            <section style={{paddingBottom: "3rem"}}>
+            <section style={{paddingBottom: "5rem"}}>
 
                 {
                     <Switch>
@@ -42,7 +42,8 @@ const EatOut = () => {
                             <>
                                 <header>
                                     <h1>My Eating Adventures!</h1>
-                                    <h5>⏰⏰⏰ WOOOO, lockdown is over, time to visit some restaurants that we been wanting to visit for sometimes. Food! FOod! FOOD! 🦀🍣🥩</h5>
+                                    <h5>⏰⏰⏰ WOOOO, lockdown is over, time to visit some restaurants that we been wanting to visit for sometimes.</h5>
+                                    <h5>Food! FOod! FOOD! 🦀🍣🥩</h5>
                                 </header>
                                 <main id="eatout">
                                     {loading ? <p style={{ textAlign: "center" }}>loading... please wait or refresh </p> :
