@@ -13,7 +13,7 @@ const EatOut = () => {
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const { data } = await axios.get("https://nat-api.herokuapp.com/eatout/")
+                const { data } = await axios.get("https://nat-api.herokuapp.com/eatout/?ordering=-id")
                 setPost(data)
                 setLoading(false)
             } catch (err) {
