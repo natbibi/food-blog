@@ -32,7 +32,8 @@ The client will open on port 8080
 
 ## Bugs
 - [x] unreponsive on mobile devices 
-- [x] images not loading in production -> SOLVED changed from .png to .jpg, change casing to lower case and use relative path
+- [x] images not loading in production -> SOLVED changed from .png to .jpg, change casing to lower case and use relative path   
+- [x] dynamic id routing not working since data is fetched in descending order -> SOLVED use .find and match.params  
 
 ## Changelog
 

@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import { Route, Switch, useHistory } from 'react-router-dom';
+import { Route, Switch, useParams, useHistory } from 'react-router-dom';
 import axios from 'axios';
 import { EatOutPost, EatOutBlog } from '../../components'
 
@@ -7,13 +7,13 @@ const EatOut = () => {
     const [post, setPost] = useState([])
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
-
     const history = useHistory();
+    const { id } = useParams();
 
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const { data } = await axios.get("https://nat-api.herokuapp.com/eatout/?ordering=-id")
+                const { data } = await axios.get("https://nat-api.herokuapp.com/eatout/?format=json&ordering=-id")
                 setPost(data)
                 setLoading(false)
             } catch (err) {
@@ -25,6 +25,7 @@ const EatOut = () => {
     }, []);
 
     const handleSelect = (id) => {
+        console.log(id)
         history.push(`eatout/${(id)}`)
     }
 
@@ -34,7 +35,7 @@ const EatOut = () => {
 
     return (
         <>
-            <section style={{paddingBottom: "5rem"}}>
+            <section style={{ paddingBottom: "5rem" }}>
 
                 {
                     <Switch>
@@ -59,7 +60,7 @@ const EatOut = () => {
                                 </header>
                                 {loading ? <p style={{ textAlign: "center", marginTop: "3rem" }}>loading... please wait or refresh </p> :
                                     <div className="container">
-                                        <EatOutBlog postData={post[match.params.id - 1]} handleSelect={() => { }} />
+                                        <EatOutBlog postData={post.find(p => p.id == [match.params.id])} handleSelect={() => { }} />
                                     </div>
                                 }
                             </>

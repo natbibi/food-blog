@@ -1,9 +1,11 @@
 import React from 'react'
+import { useParams } from 'react-router-dom'
 
 const EatOutBlog = ({ postData, handleSelect }) => {
-    console.log(postData)
+    const { id } = useParams();
+
     return (
-        <>
+        <> 
             <section className="blog-container">
                 <div className="left">
                     <img style={{ width: "300px", height: "auto" }} src={postData.image} onClick={() => handleSelect(postData.id)} />
@@ -19,7 +21,7 @@ const EatOutBlog = ({ postData, handleSelect }) => {
                         <p>Service: {postData.service}⭐️</p>
                     </div>
                     <p>{postData.restaurant_name}, {postData.location}</p>
-                    <p style={{textAlign: "justify"}}>{postData.description}</p>
+                    <p style={{ textAlign: "justify" }}>{postData.description}</p>
                     {postData.recommend ? <p>Would I recommend: ✅ </p> : <p>Would I recommend: ❌</p>}
                 </div>
             </section>
