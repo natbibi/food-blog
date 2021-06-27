@@ -5,6 +5,7 @@ main#eatout {
     margin-inline: 4rem;
 
     .post-container {
+        position: relative;
         display: flex;
         flex-direction: column;
         align-items: center;
@@ -18,6 +19,26 @@ main#eatout {
             border-radius: 12px;
             margin-bottom: 0.7rem;
             cursor: pointer;
+        }
+
+        .centered {
+            position: absolute;
+            width: 80%;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .hide {
+            display: none;
+        }
+
+        img:hover + .hide {
+            display: block;
+          }
+
+        img:hover {
+            opacity: 0.4;
         }
 
         p {
