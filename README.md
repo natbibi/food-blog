@@ -29,6 +29,7 @@ The client will open on port 8080
 
 ### TODOS
 - [ ] add correct email address and activate formsubmit.io 
+- [x] upload multiple images per post / UI in progress 🚧
 
 ## Bugs
 - [x] unreponsive on mobile devices 
