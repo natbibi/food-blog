@@ -3,10 +3,12 @@ import { Burger } from '../'
 
 const Header = () => {
     return (
+        <>
+        <h1 className="title">Ste's Food</h1>
         <nav role="navigation">
-            <h1>Ste's Food</h1>
             <Burger />
         </nav>
+        </>
     );
 }
 
