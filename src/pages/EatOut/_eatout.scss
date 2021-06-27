@@ -17,6 +17,7 @@ main#eatout {
             width: 100%;
             border-radius: 12px;
             margin-bottom: 0.7rem;
+            cursor: pointer;
         }
 
         p {
@@ -25,11 +26,15 @@ main#eatout {
     }
 }
 
-.blog-container {
+.item-container {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center; 
+
+    img {
+        border-radius: 12px;
+    }
 
     .left {
         display: grid;
