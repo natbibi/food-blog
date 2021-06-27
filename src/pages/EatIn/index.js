@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import axios from 'axios';
-import { EatInPost } from '../../components'
+import { EatInList } from '../../components'
 
 const EatIn = () => {
     const [post, setPost] = useState([])
@@ -23,7 +23,7 @@ const EatIn = () => {
     }, []);
 
     const renderPosts = post.map(d =>
-        <EatInPost postData={d} key={d.id} />
+        <EatInList postData={d} key={d.id} />
     );
 
  

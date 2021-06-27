@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EatInPost = ({ postData }) => {
+const EatInList = ({ postData }) => {
     console.log(postData)
     return (
         <div className="post-container">
@@ -17,4 +17,4 @@ const EatInPost = ({ postData }) => {
     )
 }
 
-export default EatInPost
+export default EatInList

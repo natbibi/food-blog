@@ -1,6 +1,6 @@
 import React from 'react'
 
-const EatOutPost = ({ postData, handleSelect }) => {
+const EatOutList = ({ postData, handleSelect }) => {
     return (
         <div className="post-container">
             <h5 style={{ fontSize: "18px", width: "70%" }}><em>"{postData.title}"</em></h5>
@@ -14,7 +14,7 @@ const EatOutPost = ({ postData, handleSelect }) => {
     )
 }
 
-export default EatOutPost
+export default EatOutList
 
 // "title": "wAWuueAt",
 // "restaurant_name": "Waaaweewaaa",

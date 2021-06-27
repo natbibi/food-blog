@@ -1,7 +1,7 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
 
-const EatOutBlog = ({ postData, handleSelect }) => {
+const EatOutItem = ({ postData, handleSelect }) => {
     const { id } = useParams();
 
     return (
@@ -29,4 +29,4 @@ const EatOutBlog = ({ postData, handleSelect }) => {
     )
 }
 
-export default EatOutBlog
+export default EatOutItem

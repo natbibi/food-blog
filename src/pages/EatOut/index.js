@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch, useParams, useHistory } from 'react-router-dom';
 import axios from 'axios';
-import { EatOutPost, EatOutBlog } from '../../components'
+import { EatOutList, EatOutItem } from '../../components'
 
 const EatOut = () => {
     const [post, setPost] = useState([])
@@ -30,7 +30,7 @@ const EatOut = () => {
     }
 
     const renderPosts = post.map(d =>
-        <EatOutPost postData={d} key={d.id} handleSelect={handleSelect} />
+        <EatOutList postData={d} key={d.id} handleSelect={handleSelect} />
     );
 
     return (
@@ -60,7 +60,7 @@ const EatOut = () => {
                                 </header>
                                 {loading ? <p style={{ textAlign: "center", marginTop: "3rem" }}>loading... please wait or refresh </p> :
                                     <div className="container">
-                                        <EatOutBlog postData={post.find(p => p.id == [match.params.id])} handleSelect={() => { }} />
+                                        <EatOutItem postData={post.find(p => p.id == [match.params.id])} handleSelect={() => { }} />
                                     </div>
                                 }
                             </>
