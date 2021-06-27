@@ -46,13 +46,24 @@ nav {
     left: 0;
     padding: 10px;
     color: grey;
+}
 
-    @media only screen and (max-width: 800px) {
-        #footer {
-            display: flex;
-            justify-content: center;
-            z-index: -1;
-            position: sticky;
-        }
+@media only screen and (max-width: 800px) {
+
+    nav {
+        position: fixed;
+        top: 0;
+    }
+    
+    h1.title {
+        position: sticky;
+        top: 0;
+    }
+
+    #footer {
+        display: flex;
+        justify-content: center;
+        z-index: -1;
+        position: sticky;
     }
 }
