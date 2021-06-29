@@ -30,6 +30,8 @@ The client will open on port 8080
 ### TODOS
 - [ ] add correct email address and activate formsubmit.io 
 - [x] upload multiple images per post / UI in progress 🚧
+- [ ] add [search filter](https://www.django-rest-framework.org/api-guide/filtering/#djangofilterbackend) option
+- [ ] add options to switch between gallery view and list view
 
 ## Bugs
 - [x] unreponsive on mobile devices 
@@ -43,6 +45,7 @@ The client will open on port 8080
 2. Create a form component and render on Home page 
 3. Add text, details and social icons
 4. Fetch posts from api 
+5. Add styling top improve UI and new features to improve UX
 
 ## Wins & Challenges
 ### Wins
