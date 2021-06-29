@@ -18,7 +18,7 @@ const Contact = () => {
                     <label htmlFor="email">Email: </label>
                     <input type="email" id="email" name="email" required></input>
                     <label htmlFor="message">Message:  </label>
-                    <textarea rows="4" id="message" name="message"></textarea>
+                    <textarea rows="3" id="message" name="message"></textarea>
                     <input type="submit" value="submit"></input>
                 </form>
             </main>

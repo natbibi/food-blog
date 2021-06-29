@@ -8,10 +8,28 @@ main#contact {
         color: $text-offwhite;
         width: 50%;
 
+        input[type=submit] {
+            color: $accent;
+            margin-block: 1rem;
+            font-size: 20px;
+            border-radius: 5px;
+            border: 1px solid $secondary;
+            cursor: pointer;
+            width: 30%;
+        }
+
+        input[type=submit]:hover {
+            transform: scale(1.02)
+        }
+
         input, textarea {
             margin-bottom: 1rem;
+            border: 1px solid white;
+            background: $secondary;
+            color: $text-offwhite;
+            border-radius: 3px;
         }
-        
+
         p { 
             margin-bottom: 3rem;
         }
