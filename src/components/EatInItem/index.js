@@ -1,6 +1,6 @@
 import React from 'react'
 import { useParams } from 'react-router-dom'
-import { FcCalendar } from "react-icons/fc";
+import { FcPodiumWithSpeaker } from "react-icons/fc";
 
 const EatInItem = ({ postData, handleSelect }) => {
     const { id } = useParams()
@@ -14,7 +14,8 @@ const EatInItem = ({ postData, handleSelect }) => {
 
                 <div className="right">
                     <h3><em>"{postData.title}"</em></h3>
-                    <p style={{ display: "flex", alignItems: "center" }}><FcCalendar /> {postData.date}</p>
+                    <h6>{postData.date}</h6>
+                    <p style={{ display: "flex", alignItems: "center" }}><FcPodiumWithSpeaker /> {postData.dish_name}</p>
                     <p style={{ textAlign: "justify" }}>{postData.description}</p>
                 </div>
             </section>

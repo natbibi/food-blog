@@ -1,5 +1,5 @@
 import React from 'react'
-import { FcCalendar } from "react-icons/fc";
+import { FcPodiumWithSpeaker } from "react-icons/fc";
 
 const EatInList = ({ postData, handleSelect }) => {
 
@@ -8,7 +8,7 @@ const EatInList = ({ postData, handleSelect }) => {
             <img src={postData.image} onClick={() => handleSelect(postData.id)} />
             <div className="centered hide"><h5 style={{ fontSize: "18px", textAlign: "center" }}><em>"{postData.title}"</em></h5></div>
             <p style={{ fontSize: "14px" }}>{postData.restaurant_name}</p>
-            <p style={{ display: "flex", alignItems: "center", fontSize: "12px", paddingBottom: "0.5rem" }}><FcCalendar /> {postData.date}</p>
+            <p style={{ display: "flex", alignItems: "center", fontSize: "12px", paddingBottom: "0.5rem" }}><FcPodiumWithSpeaker /> {postData.dish_name}</p>
         </div>
     )
 
