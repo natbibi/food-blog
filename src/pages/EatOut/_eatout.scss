@@ -74,6 +74,15 @@ main#eatout {
         }
     }
 
+    .more-images {
+
+        img {
+            width: 120px;
+            height: auto;
+            margin-inline: 0.5rem;
+        }
+    }
+
     @media only screen and (max-width: 800px) {
         flex-wrap: wrap;
     }
