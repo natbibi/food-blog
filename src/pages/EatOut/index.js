@@ -55,9 +55,6 @@ const EatOut = () => {
 
                         <Route path={"/eatout/:id"} render={({ match }) => (
                             <>
-                                <header>
-                                    <h1>My Eating Adventures!</h1>
-                                </header>
                                 {loading ? <p style={{ textAlign: "center", marginTop: "3rem" }}>loading... please wait or refresh </p> :
                                     <div className="container">
                                         <EatOutItem postData={post.find(p => p.id == [match.params.id])} handleSelect={() => { }} />
