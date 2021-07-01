@@ -13,8 +13,9 @@ const EatOutItem = ({ postData, handleSelect }) => {
 
                     <div className="more-images">
                         <img style={{ width: "100px", height: "auto" }} src={postData.more_images[0]} />
-                        <img style={{ width: "100px", height: "auto" }} src={postData.more_images[0]} />
-                        <img style={{ width: "100px", height: "auto" }} src={postData.more_images[0]} />
+                        <img style={{ width: "100px", height: "auto" }} src={postData.more_images[1]} />
+                        <img style={{ width: "100px", height: "auto" }} src={postData.more_images[2]} />
+                        <img style={{ width: "100px", height: "auto" }} src={postData.more_images[3]} />
                     </div>
                     
                 </div>
