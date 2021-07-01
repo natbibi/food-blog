@@ -80,11 +80,14 @@ main#eatout {
     }
 
     .more-images {
-
         img {
             width: 120px;
             height: auto;
             margin-inline: 0.5rem;
+        }
+
+        img:hover {
+            transform: scale(1.3);
         }
     }
 
