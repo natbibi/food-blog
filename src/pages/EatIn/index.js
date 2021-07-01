@@ -1,18 +1,17 @@
 import React, { useEffect, useState } from 'react';
 import { Route, Switch, useParams, useHistory } from 'react-router-dom';
 import axios from 'axios';
-import { EatInList } from '../../components'
+import { EatInList, EatInItem } from '../../components'
 
 const EatIn = () => {
     const [post, setPost] = useState([])
-    const [loading, setLoading] = useState(false);
+    const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
     const history = useHistory();
     const { id } = useParams();
 
     useEffect(() => {
         const fetchPosts = async () => {
-            setLoading(true)
             try {
                 const { data } = await axios.get("https://nat-api.herokuapp.com/eatin/")
                 setPost(data)
@@ -33,7 +32,6 @@ const EatIn = () => {
     const renderPosts = post.map(d =>
         <EatInList postData={d} key={d.id} handleSelect={handleSelect} />
     );
-
 
     return (
         <>
