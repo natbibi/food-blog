@@ -72,6 +72,10 @@ main#eatout {
         .ratings {
             display: flex;
             flex-direction: row;
+
+            p {
+                margin-right: 1rem;
+            }
         }
     }
 

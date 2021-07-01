@@ -16,10 +16,10 @@ const EatOutItem = ({ postData, handleSelect }) => {
                     <h3><em>"{postData.title}"</em></h3>
                     <h6>{postData.date}</h6>
                     <div className="ratings">
-                        <p>Value: {postData.value}⭐️ |</p>
-                        <p>Taste: {postData.taste}⭐️ |</p>
-                        <p>Atmosphere: {postData.atmosphere}⭐️ |</p>
-                        <p>Service: {postData.service}⭐️</p>
+                        <p>Value: {postData.value} ⭐️ </p>
+                        <p>Taste: {postData.taste} ⭐️ </p>
+                        <p>Atmosphere: {postData.atmosphere} ⭐️ </p>
+                        <p>Service: {postData.service} ⭐️</p>
                     </div>
                     <p style={{ display: "flex", alignItems: "center" }}><IoLocationOutline /> {postData.restaurant_name}, {postData.location}</p>
                     <p style={{ textAlign: "justify" }}>{postData.description}</p>
