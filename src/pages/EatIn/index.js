@@ -55,7 +55,7 @@ const EatIn = () => {
                         <Route path={"/eatin/:id"} render={({ match }) => (
                             <>
                                 {loading ? <p style={{ textAlign: "center", marginTop: "3rem" }}>loading... please wait or refresh </p> :
-                                    <div className="container">
+                                    <div className="container eatin-container">
                                         <EatInItem postData={post.find(p => p.id == [match.params.id])} handleSelect={() => { }} />
                                     </div>
                                 }
