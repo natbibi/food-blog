@@ -32,6 +32,7 @@ The client will open on port 8080
 - [x] upload multiple images per post / UI in progress 🚧
 - [ ] add [search filter](https://www.django-rest-framework.org/api-guide/filtering/#djangofilterbackend) option
 - [ ] add options to switch between gallery view and list view
+- [x] render 'eatin' when posts have been added - match style of 'eatout'
 
 ## Bugs
 - [x] unreponsive on mobile devices 
