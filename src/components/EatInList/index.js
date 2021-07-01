@@ -1,20 +1,20 @@
 import React from 'react'
+import { FcCalendar } from "react-icons/fc";
 
-const EatInList = ({ postData }) => {
-    console.log(postData)
+const EatInList = ({ postData, handleSelect }) => {
+
     return (
         <div className="post-container">
-            {/* <h5>"{postData.title}"</h5>
-            <img style={{ width: "300px", height: "auto" }} src={postData.image} />
-            <p>{postData.restaurant_name}, {postData.location}</p>
-            <div className="ratings">
-                <p>Value: {postData.value}⭐️ |</p>
-                <p>Taste: {postData.taste}⭐️ |</p>
-                <p>Atmosphere: {postData.atmosphere}⭐️ |</p>
-                <p>Service: {postData.service}⭐️</p>
-            </div> */}
+            <img src={postData.image} onClick={() => handleSelect(postData.id)} />
+            <div className="centered hide"><h5 style={{ fontSize: "18px", textAlign: "center" }}><em>"{postData.title}"</em></h5></div>
+            <p style={{ fontSize: "14px" }}>{postData.restaurant_name}</p>
+            <p style={{ display: "flex", alignItems: "center", fontSize: "12px", paddingBottom: "0.5rem" }}><FcCalendar /> {postData.date}</p>
         </div>
     )
+
+
+
+
 }
 
 export default EatInList
