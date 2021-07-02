@@ -21,6 +21,9 @@ function App() {
         <Route path="/eatin">
           <Pages.EatIn />
         </Route>
+        <Route path="/thankyou">
+          <Pages.Thankyou />
+        </Route>
         <Route>
           <Pages.NotFound />
         </Route>
