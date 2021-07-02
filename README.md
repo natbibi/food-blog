@@ -28,11 +28,12 @@ The client will open on port 8080
 3. Using axios, fetch data from my [REST API](https://github.com/natbibi/my-rest-api) 
 
 ### TODOS
-- [ ] add correct email address and activate formsubmit.io 
+- [x] add correct email address and activate formsubmit.io 
 - [x] upload multiple images per post / UI in progress 🚧
 - [ ] add [search filter](https://www.django-rest-framework.org/api-guide/filtering/#djangofilterbackend) option
 - [ ] add options to switch between gallery view and list view
 - [x] render 'eatin' when posts have been added - match style of 'eatout'
+- [ ] improve mobile burger nav UX - closing nav bar on click of link
 
 ## Bugs
 - [x] unreponsive on mobile devices 
