@@ -52,6 +52,7 @@ main#eatout, main#eatin {
     display: flex;
     flex-direction: row;
     align-items: center; 
+    justify-content: center; // do not remove 
 
     .post-container {
         position: relative;
