@@ -8,13 +8,13 @@ const EatInItem = ({ postData, handleSelect }) => {
     return (
         <>
             <section className="item-container">
-            <div className="left">
+                <div className="left">
                     <img style={{ width: "300px", height: "auto" }} src={postData.image} onClick={() => handleSelect(postData.id)} />
                 </div>
 
                 <div className="right">
-                    <h3><em>"{postData.title}"</em></h3>
-                    <h6>{postData.date}</h6>
+                    <span style={{ fontSize: "12px", textAlign: "end" }}>{postData.date}</span>
+                    <h3 style={{ marginBlock: "1.5rem" }}><em>"{postData.title}"</em></h3>
                     <p style={{ display: "flex", alignItems: "center" }}><FcPodiumWithSpeaker /> {postData.dish_name}</p>
                     <p style={{ textAlign: "justify" }}>{postData.description}</p>
                 </div>
