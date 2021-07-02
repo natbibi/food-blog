@@ -13,6 +13,7 @@ const Contact = () => {
                 <form action="https://formsubmit.co/idontknowwhoamilol@gmail.com" method="POST" name="email-form">
                     <input type="hidden" name="_captcha" value="false"></input>
                     <input type="hidden" name="_subject" value="New Message!"></input>
+                    <input type="hidden" name="_next" value="https://stesfood.netlify.app/thankyou"></input>
                     <label htmlFor="name">Name: </label>
                     <input type="text" id="name" name="name" required></input>
                     <label htmlFor="email">Email: </label>
