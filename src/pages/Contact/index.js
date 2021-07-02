@@ -10,7 +10,7 @@ const Contact = () => {
             </header>
 
             <main id="contact">
-                <form action="https://formsubmit.co/your@email.com" method="POST" name="email-form">
+                <form action="https://formsubmit.co/idontknowwhoamilol@gmail.com" method="POST" name="email-form">
                     <input type="hidden" name="_captcha" value="false"></input>
                     <input type="hidden" name="_subject" value="New Message!"></input>
                     <label htmlFor="name">Name: </label>
