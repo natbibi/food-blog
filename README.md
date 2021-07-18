@@ -1,4 +1,6 @@
 # Project: Food Blog
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/6a27d0fa-401c-418b-9287-3c99a94a2854/deploy-status)](https://app.netlify.com/sites/stesfood/deploys)
 ## Description 
 A food blog made in react. Connected to my [REST API](https://github.com/natbibi/my-rest-api) to fetch food post's data.
 
@@ -16,11 +18,11 @@ The client will open on port 8080
 
 ### Dependencies: 
 
-   - Client: axios, react, router-dom, react-router-dom, react-icons
+   - Client: bootstrap, react, react-bootstrap, router-dom, react-router-dom, react-icons, styled-components
    
 ### DevDependencies:
    
-   - Client: babel 
+   - Client: babel, webpack, axios, testing-library, jest, loaders, sass, 
 
 ## Process 
 1. Create a front end in react with a previously made [react template](https://github.com/natbibi/react-template)
@@ -34,6 +36,7 @@ The client will open on port 8080
 - [ ] add options to switch between gallery view and list view
 - [x] render 'eatin' when posts have been added - match style of 'eatout'
 - [ ] improve mobile burger nav UX - closing nav bar on click of link
+- [ ] improve load speeds - currently images take long to load, esp on mobile devices
 
 ## Bugs
 - [x] unreponsive on mobile devices 
@@ -49,6 +52,7 @@ The client will open on port 8080
 3. Add text, details and social icons
 4. Fetch posts from api 
 5. Add styling top improve UI and new features to improve UX
+5. Add test suite
 
 ## Wins & Challenges
 ### Wins
@@ -56,3 +60,4 @@ The client will open on port 8080
 
 ### Challenges
 - working with .png files  
+- react testing library config
