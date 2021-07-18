@@ -9,7 +9,7 @@ const Home = () => {
                 <h1>Hello World!</h1>
             </header>
             <main id="homepage">
-                <img src={stemoji} />
+                <img src={stemoji} height="400px" width="400px" />
             </main>
         </>
     )
