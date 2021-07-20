@@ -5,7 +5,7 @@ import { createMemoryHistory } from 'history'
 import { Router } from 'react-router-dom';
 
 describe('NotFound', () => {
-    test('it renders', () => {
+    test('landing on a bad page', () => {
     const history = createMemoryHistory();
 
     render(
@@ -13,7 +13,6 @@ describe('NotFound', () => {
             <NotFound />
         </Router>
     );
-
     expect(screen.getByText(/Oops/i)).toBeInTheDocument()
     });
 })
