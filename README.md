@@ -44,7 +44,8 @@ The client will open on port 8080
 - [x] dynamic id routing not working since data is fetched in descending order -> SOLVED use .find and match.params 
 - [x] nav bar background blocking text in mobile 
 - [x] favicon not displaying in dev or production -> link to url instead (https://i.ibb.co/tYjPmCW/stemoji.png)
-- [x] \r\n\r not rendering line breaks -> add CSS: `white-space: pre-line;`
+- [x] \r\n\r not rendering line breaks -> add CSS: `white-space: pre-line;` 
+- [x] images on list view not all the same size -> use `height: 100%` instead of `height: auto` 
 
 ## Changelog
 
