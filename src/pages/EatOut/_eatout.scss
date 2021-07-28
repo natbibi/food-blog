@@ -47,6 +47,10 @@ main#eatout, main#eatin {
     }
 }
 
+.display-linebreak {
+    white-space: pre-line;
+}
+
 .item-container {
     margin-top: 2rem;
     display: flex;

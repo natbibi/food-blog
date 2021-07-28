@@ -7,7 +7,7 @@ const EatOutItem = ({ postData, handleSelect }) => {
 
     return (
         <>
-            <section className="item-container">
+            <section className="item-container display-linebreak">
                 <div className="left">
                     <div className="post-container">
                         <img style={{ width: "300px", height: "auto" }} src={postData.image} onClick={() => handleSelect(postData.id)} />
