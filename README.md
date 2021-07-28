@@ -43,7 +43,7 @@ The client will open on port 8080
 - [x] images not loading in production -> SOLVED changed from .png to .jpg, change casing to lower case and use relative path   
 - [x] dynamic id routing not working since data is fetched in descending order -> SOLVED use .find and match.params 
 - [x] nav bar background blocking text in mobile 
-- [ ] favicon not displaying in dev or production  
+- [x] favicon not displaying in dev or production -> link to url instead (https://i.ibb.co/tYjPmCW/stemoji.png)
 
 ## Changelog
 
