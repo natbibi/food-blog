@@ -55,6 +55,7 @@ The client will open on port 8080
 4. Fetch posts from api 
 5. Add styling top improve UI and new features to improve UX
 5. Add test suite
+6. Add animation to home page (hope to help with load lag)
 
 ## Wins & Challenges
 ### Wins

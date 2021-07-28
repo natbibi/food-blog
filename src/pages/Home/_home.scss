@@ -6,5 +6,17 @@ main#homepage {
         border-radius: 50%;
         width: 400px;
         height: auto;
+        animation: intro-load ease-in 300ms;
     }
+    @keyframes intro-load {
+        0% {
+          transform: translateY(500px);
+          opacity: 0;
+        }
+      
+        100% {
+          transform: translateY(0px);
+          opacity: 1;
+        }
+      }
 }
