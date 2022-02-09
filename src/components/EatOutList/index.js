@@ -6,7 +6,7 @@ const EatOutList = ({ postData, handleSelect }) => {
         <div className="post-container">
             <img src={postData.image} onClick={() => handleSelect(postData.id)} />
             <div className="centered hide"><h5 style={{ fontSize: "18px", textAlign: "center" }}><em>"{postData.title}"</em></h5></div>
-            <p style={{ fontSize: "14px" }}>{postData.value + postData.taste + postData.atmosphere + postData.service} ⭐️ | {postData.restaurant_name}</p>
+            <p style={{ fontSize: "14px" }}>{Math.round((0.3*postData.value + 0.3*postData.taste + 0.2*postData.atmosphere + 0.2*postData.service) * 10) / 10} ⭐️ | {postData.restaurant_name}</p>
             <p style={{ display: "flex", alignItems: "center", fontSize: "12px", paddingBottom: "0.5rem" }}><IoLocationOutline />  {postData.location}</p>
         </div>
     )
