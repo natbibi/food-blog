@@ -9,11 +9,12 @@ const EatOut = () => {
     const [error, setError] = useState("");
     const history = useHistory();
     const { id } = useParams();
+    const [sortData, setSortData] = useState("ordering=-id")
 
     useEffect(() => {
         const fetchPosts = async () => {
             try {
-                const { data } = await axios.get("https://nat-api.herokuapp.com/eatout/?format=json&ordering=-id")
+                const { data } = await axios.get(`https://nat-api.herokuapp.com/eatout/?format=json&${sortData}`)
                 setPost(data)
                 setLoading(false)
             } catch (err) {
@@ -22,7 +23,11 @@ const EatOut = () => {
             }
         }
         fetchPosts()
-    }, []);
+    }, [sortData]);
+
+    const handleClick = (e) => {
+        setSortData(e.target.value)
+    }
 
     const handleSelect = (id) => {
         console.log(id)
@@ -45,6 +50,16 @@ const EatOut = () => {
                                     <h1>My Eating Adventures!</h1>
                                     <h5>⏰⏰⏰ WOOOO, lockdown is over, time to visit some restaurants that we been wanting to visit for sometimes.</h5>
                                     <h5>Food! FOod! FOOD! 🦀🍣🥩</h5>
+                                    <div className="dropdown-content">
+                                        <label>Sort by:
+                                            <select id="dropdown" onChange={handleClick} >
+                                                <option value="ordering=-id">Newest</option>
+                                                <option value="ordering=date">Oldest</option>
+                                                <option value="recommend=true">Recommend</option>
+                                                <option value="recommend=false">Avoid</option>
+                                            </select>
+                                        </label>
+                                    </div>
                                 </header>
                                 <main id="eatout">
                                     {loading ? <p style={{ textAlign: "center" }}>loading... please wait or refresh </p> :
